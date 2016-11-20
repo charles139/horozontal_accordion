@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	background: burlywood;
+	font-family: Prata, serif;
+}
+ul.thesuit_acc_ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.thesuit_acc_ul li {
+    position: absolute;
+    background: #000;
+    /*max-height: 734px;*/
+    width: 80%;
+    border-right: solid 1px rgba(92, 104, 96, 0.5);
+}
+ul.thesuit_acc_ul li img {
+	width: 100%;
+	background: #000;
+}
+li#ts_home_tab {
+    border-right:none;
+    z-index: 10;
+}
+li#ts_home_tab , li#ts_home_tab img {
+	background: initial;
+}
+li#ts_home_tab img {
+	width: 0.835%;
+}
+li#ts_step1 , li#ts_step2 , li#ts_step3 , li#ts_step4 , li#ts_home_tab img {
+    cursor: pointer;
+}
+li#ts_step4 {
+    right: 0%;
+    z-index: 5;
+}
+li#ts_step3 {
+    right: 5%;
+    z-index: 6;
+}
+li#ts_step2 {
+    right: 10%;
+    z-index: 7;
+}
+li#ts_step1 {
+    right: 15%;
+    z-index: 8;
+}
+li#ts_cover {
+    z-index: 9;
+}
+li#ts_step1 img , li#ts_step2 img , li#ts_step3 img , li#ts_step4 img {
+    opacity: 0;
+}
+div.step_label_wrapper {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    color: #fff;
+    width: 6%;
+}
+div.step_label_wrapper p.step_p , div.step_label_wrapper p.step_numb {
+	text-align: center;
+	margin: 0;
+}
+div.step_label_wrapper p.step_p {
+	font-size: 18px;
+}
+p.step_p , p.step_numb {
+    color: #fff;
+}
+div.step_label_wrapper p.step_numb {
+	font-size: 60px;
+    padding-bottom: 20px;
+}
+div.step_img_capt {
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 5%;
+    font-size: 21px;
+    line-height: 2;
+}
+@media (max-width: 414px) {
+    .step_img_capt p.step_p {
+        font-size: 11px;
+    }
+}
